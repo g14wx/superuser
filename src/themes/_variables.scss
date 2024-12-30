@@ -13,3 +13,9 @@ $text-primary-dark: rgba(255, 255, 255, 0.87);
   --background: #{$background-light};
   --text-primary: #{$text-primary-light};
 }
+
+
+[data-theme='dark'] {
+  --background: #{$background-dark};
+  --text-primary: #{$text-primary-dark};
+}
