@@ -1,0 +1,15 @@
+$primary-color: #1976d2;
+$accent-color: #ff4081;
+$warn-color: #f44336;
+$background-light: #ffffff;
+$background-dark: #121212;
+$text-primary-light: rgba(0, 0, 0, 0.87);
+$text-primary-dark: rgba(255, 255, 255, 0.87);
+
+:root {
+  --primary-color: #{$primary-color};
+  --accent-color: #{$accent-color};
+  --warn-color: #{$warn-color};
+  --background: #{$background-light};
+  --text-primary: #{$text-primary-light};
+}

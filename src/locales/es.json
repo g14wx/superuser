@@ -1,0 +1,55 @@
+{
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "loading": "Cargando..."
+  },
+  "landing": {
+    "welcome": "Bienvenido a Nuestra Aplicación",
+    "description": "Una aplicación segura y multilingüe",
+    "getStarted": "Comenzar"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "email": "Correo",
+    "password": "Contraseña",
+    "submit": "Entrar",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "invalidCredentials": "Correo o contraseña inválidos"
+  },
+  "resetPassword": {
+    "title": "Restablecer Contraseña",
+    "email": "Correo",
+    "submit": "Enviar Link",
+    "backToLogin": "Volver al Login",
+    "success": "El link para restablecer la contraseña ha sido enviado"
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "welcome": "Bienvenido, {email}",
+    "overview": "Resumen",
+    "statistics": "Estadísticas"
+  },
+  "users": {
+    "title": "Gestión de Usuarios",
+    "list": "Lista de Usuarios",
+    "addNew": "Añadir Usuario",
+    "search": "Buscar usuarios...",
+    "deleteConfirmTitle": "Eliminar Usuario",
+    "deleteConfirmContent": "¿Está seguro de eliminar este usuario?",
+    "email": "Correo",
+    "role": "Rol",
+    "actions": "Acciones"
+  },
+  "settings": {
+    "title": "Configuración",
+    "theme": "Tema",
+    "language": "Idioma",
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro"
+  }
+}

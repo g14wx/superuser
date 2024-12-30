@@ -1,0 +1,82 @@
+@mixin theme-colors($background, $text-primary) {
+  --background: #{$background};
+  --text-primary: #{$text-primary};
+  --surface: #{lighten($background, 5%)};
+  --text-secondary: #{rgba($text-primary, 0.7)};
+  --border-color: #{rgba($text-primary, 0.12)};
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin card-style {
+  background-color: var(--surface);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+@mixin button-states {
+  &:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@mixin smooth-transition($property: all) {
+  transition: $property 0.3s ease;
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin z-index($level: 'base') {
+  @if $level == 'modal' {
+    z-index: 1000;
+  } @else if $level == 'dropdown' {
+    z-index: 500;
+  } @else if $level == 'header' {
+    z-index: 100;
+  } @else {
+    z-index: 1;
+  }
+}

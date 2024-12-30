@@ -1,0 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.theme-dark {
+  @include theme-colors($background-dark, $text-primary-dark);
+}

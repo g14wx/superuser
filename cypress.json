@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "fixturesFolder": "tests/e2e/fixtures",
+  "integrationFolder": "tests/e2e/specs",
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "supportFile": "tests/e2e/support/index.js",
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "requestTimeout": 10000,
+  "defaultCommandTimeout": 5000
+}

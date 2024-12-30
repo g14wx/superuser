@@ -1,6 +1,7 @@
+// src/router/index.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { authGuard } from './guards'
+import { globalGuard, roleGuard } from './guards'
 
 Vue.use(VueRouter)
 
@@ -33,7 +34,15 @@ const routes = [
         path: '/users',
         name: 'Users',
         component: () => import('@/views/Users.vue'),
-        meta: { requiresAuth: true }
+        meta: {
+            requiresAuth: true
+        },
+        beforeEnter: roleGuard(['ADMIN', 'SUPER_ADMIN'])
+    },
+    // Catch all route should be last
+    {
+        path: '*',
+        redirect: '/'
     }
 ]
 
@@ -43,6 +52,6 @@ const router = new VueRouter({
     routes
 })
 
-router.beforeEach(authGuard)
+router.beforeEach(globalGuard)
 
 export default router

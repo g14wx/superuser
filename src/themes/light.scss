@@ -1,0 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.theme-light {
+  @include theme-colors($background-light, $text-primary-light);
+}

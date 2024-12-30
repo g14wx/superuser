@@ -1,0 +1,55 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "back": "Back",
+    "loading": "Loading..."
+  },
+  "landing": {
+    "welcome": "Welcome to Our App",
+    "description": "A secure and multilingual application",
+    "getStarted": "Get Started"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign In",
+    "forgotPassword": "Forgot Password?",
+    "invalidCredentials": "Invalid email or password"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "email": "Email",
+    "submit": "Send Reset Link",
+    "backToLogin": "Back to Login",
+    "success": "Password reset link has been sent to your email"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {email}",
+    "overview": "Overview",
+    "statistics": "Statistics"
+  },
+  "users": {
+    "title": "User Management",
+    "list": "Users List",
+    "addNew": "Add New User",
+    "search": "Search users...",
+    "deleteConfirmTitle": "Delete User",
+    "deleteConfirmContent": "Are you sure you want to delete this user?",
+    "email": "Email",
+    "role": "Role",
+    "actions": "Actions"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}
