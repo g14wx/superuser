@@ -1,19 +1,16 @@
 
 services:
-
-  frontend-prod:
+  vue-prod:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    container_name: vue-frontend-prod
     ports:
-      - "80:80"
+      - "8083:8083"
+    env_file:
+      - .env
+    restart: unless-stopped
     environment:
       - NODE_ENV=production
-      - VUE_APP_API_URL=/api
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
+      - VUE_APP_API_URL=${VUE_APP_API_URL:-http://localhost:8080/api}
+    volumes:
+      - ./nginx-logs:/var/log/nginx
