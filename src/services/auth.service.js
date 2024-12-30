@@ -5,7 +5,7 @@ export default {
         return api.post('/auth/login', credentials)
     },
     resetPassword(email) {
-        return api.post('/auth/password-reset/request', { email })
+        return api.post('/auth/password-reset/request?email=' + email)
     },
     changePassword(data) {
         return api.post('/auth/change-password', data)

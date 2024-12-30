@@ -3,4 +3,35 @@
 
 .theme-dark {
   @include theme-colors($background-dark, $text-primary-dark);
+  @include smooth-transition(background-color);
+
+  background-color: var(--background);
+  color: var(--text-primary);
+
+  .md-card {
+    @include card-style;
+  }
+
+  .md-table {
+    background-color: var(--surface);
+
+    .md-table-head {
+      color: var(--text-secondary);
+    }
+
+    .md-table-row {
+      color: var(--text-primary);
+    }
+  }
+
+  .md-dialog {
+    background-color: var(--surface);
+    @include z-index('modal');
+  }
+
+  .md-toolbar {
+    background-color: var(--surface);
+    color: var(--text-primary);
+    @include z-index('header');
+  }
 }

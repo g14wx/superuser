@@ -35,15 +35,17 @@
     "statistics": "Estadísticas"
   },
   "users": {
-    "title": "Gestión de Usuarios",
-    "list": "Lista de Usuarios",
-    "addNew": "Añadir Usuario",
-    "search": "Buscar usuarios...",
-    "deleteConfirmTitle": "Eliminar Usuario",
-    "deleteConfirmContent": "¿Está seguro de eliminar este usuario?",
-    "email": "Correo",
-    "role": "Rol",
-    "actions": "Acciones"
+    "title": "Usuarios",
+    "add": "Agregar Usuario",
+    "edit": "Editar Usuario",
+    "delete": "Eliminar Usuario",
+    "deleteConfirm": "¿Está seguro de que desea eliminar este usuario?",
+    "noUsers": "No se encontraron usuarios",
+    "form": {
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "password": "Contraseña"
+    }
   },
   "settings": {
     "title": "Configuración",

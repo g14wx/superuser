@@ -35,17 +35,19 @@
     "statistics": "Statistics"
   },
   "users": {
-    "title": "User Management",
-    "list": "Users List",
-    "addNew": "Add New User",
-    "search": "Search users...",
-    "deleteConfirmTitle": "Delete User",
-    "deleteConfirmContent": "Are you sure you want to delete this user?",
-    "email": "Email",
-    "role": "Role",
-    "actions": "Actions"
+    "title": "Users",
+    "add": "Add User",
+    "edit": "Edit User",
+    "delete": "Delete User",
+    "deleteConfirm": "Are you sure you want to delete this user?",
+    "noUsers": "No users found",
+    "form": {
+      "email": "Email",
+      "role": "Role",
+      "password": "Password"
+    }
   },
-  "settings": {
+    "settings": {
     "title": "Settings",
     "theme": "Theme",
     "language": "Language",

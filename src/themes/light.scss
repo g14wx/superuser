@@ -3,4 +3,12 @@
 
 .theme-light {
   @include theme-colors($background-light, $text-primary-light);
+  @include smooth-transition(background-color);
+
+  background-color: var(--background);
+  color: var(--text-primary);
+
+  .md-card {
+    @include card-style;
+  }
 }

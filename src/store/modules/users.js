@@ -1,4 +1,3 @@
-// src/store/modules/users.js
 import UsersService from '@/services/users.service'
 
 export default {

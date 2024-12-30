@@ -1,4 +1,3 @@
-// src/router/index.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { globalGuard, roleGuard } from './guards'
@@ -39,7 +38,12 @@ const routes = [
         },
         beforeEnter: roleGuard(['ADMIN', 'SUPER_ADMIN'])
     },
-    // Catch all route should be last
+    {
+        path: '/change-password',
+        name: 'ChangePassword',
+        component: () => import('@/views/ChangePassword.vue'),
+        props: (route) => ({ token: route.query.token })
+    },
     {
         path: '*',
         redirect: '/'
