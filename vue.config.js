@@ -27,7 +27,16 @@ module.exports = {
         }
     },
     devServer: {
-        port: 3030,
+        port: 8083,
+        host: '0.0.0.0',
+        hot: true,
+        watchOptions: {
+            poll: true, // Enable polling
+            ignored: /node_modules/,
+            aggregateTimeout: 300 // Delay before rebuilding
+        },
+        public: '0.0.0.0:8083',
+        disableHostCheck: true,
         proxy: {
             '/api': {
                 target: process.env.VUE_APP_API_URL,
@@ -37,5 +46,7 @@ module.exports = {
                 }
             }
         }
-    }
+    },
+
+
 }

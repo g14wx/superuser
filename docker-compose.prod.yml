@@ -1,0 +1,19 @@
+
+services:
+
+  frontend-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: vue-frontend-prod
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+      - VUE_APP_API_URL=/api
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

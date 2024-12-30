@@ -50,7 +50,7 @@ const validateToken = (token) => {
 
 export const globalGuard = async (to, from, next) => {
     const token = localStorage.getItem('token')
-    const isAuthenticated = store.getters['auth/isAuthenticated']
+    // const isAuthenticated = store.getters['auth/isAuthenticated']
 
     if (token && !validateToken(token)) {
         store.dispatch('auth/logout')
