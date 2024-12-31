@@ -3,7 +3,7 @@ import store from '@/store'
 import router from '@/router'
 
 const api = axios.create({
-    baseURL: process.env.VUE_APP_API_URL || 'http://localhost:8080/api',
+    baseURL: process.env.VUE_APP_API_URL || 'https://api-superuser.codelogystudios.com/api',
     headers: {
         'Content-Type': 'application/json'
     }
